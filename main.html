@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dorsa" rel="stylesheet">
+    <title>Kursova</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+          <div class="logo"><a href="index.html"><h1>Kursova</h1></a></div>
+          <div class="task"><h2>Моделювання технологічних параметрів процесу обробки на револьверних верстатах</h2></div>
+      </header>
+      <main>
+        <div class="block">
+
+          <form id="frm1" action="index.html">
+            <label class="label" for="first-name">Виберіть тип поверхні</label>
+            <select class="" id="type_model" onchange="changeModel();">
+              <option value="1">циліндр відкритий</option>
+              <option value="2">циліндр закритий</option>
+              <option value="3">циліндр з отвором</option>
+              <option value="4">отвір</option>
+              <option value="5">конус</option>
+              <option value="6">сфера</option>
+              <option value="7">канавка</option>
+              <option value="8">зовнішня фаска</option>
+            </select>
+            <input type="number" id="height" name="height" placeholder="Введіть радіус"><label for="first-name" id="before_height">в мм.</label>
+            <input type="number" id="width" name="width" placeholder="Ширина заготовки"><label for="first-name" id="before_width">в мм.</label>
+            <input type="number" id="long" name="long" placeholder="Довжина заготовки"><label for="first-name" id="before_long">в мм.</label>
+
+            <label class="label" for="first-name">Виберіть шорсткість оброблювальної поверхні</label>
+            <select class="" id="ra" name="">
+              <option value="1">Ra12.6</option>
+              <option value="2">Ra6.3</option>
+              <option value="3">Ra3.2</option>
+              <option value="4">Ra1.6</option>
+              <option value="5">Ra0.8</option>
+            </select>
+
+            <label class="label" for="first-name">Виберіть матеріал деталі</label>
+            <select class="" id="material" name="">
+              <option value="1">Конструкційні</option>
+              <option value="2">Леговані</option>
+              <option value="3">Жароміцні</option>
+              <option value="4">Кольорові</option>
+            </select>
+          </form>
+          <button onclick="myFunction()">Розрахувати</button>
+        </div>
+        <div class="rozrah">
+          <h2 id="result"></h2>
+          <div class="chorn">
+            <h3 id="type_chorn"></h3>
+            <p id="podach"></p>
+            <p id="rezym_riz"></p>
+            <p id="normal_time"></p>
+            <p id="sht_time"></p>
+            <p id="type_instrument"></p>
+          </div>
+          <div class="clear">
+            <h3 id="type_clean"></h3>
+            <p id="podach_clear"></p>
+            <p id="rezym_riz_clear"></p>
+            <p id="normal_time_clear"></p>
+            <p id="sht_time_clear"></p>
+            <p id="type_instrument_clear"></p>
+          </div>
+          <p id="type_varstat"></p>
+          <img id="imageid" alt="">
+          <h5 id="spravka"></h5>
+        </div>
+        <script src="js/myscript.js"></script>
+      </main>
+      <footer>
+        <div class="contacts">
+          <div>
+            <h3><a href="#">FAQS Page</a></h3>
+            <h3><a href="#">People Say</a></h3>
+          </div>
+          <div>
+            <h3><a href="#">Useful Links</a></h3>
+            <h3><a href="#">Partners</a></h3>
+          </div>
+          <div>
+            <h3><a href="#">Insurance</a></h3>
+            <h3><a href="#">Family travel</a></h3>
+          </div>
+          <div>
+            <h2>Contact me:</h2>
+            <p>TEL: +38(050)784 02 57</p>
+            <p>Mail: yurkovec.v@gmail.com</p>
+          </div>
+        </div>
+        <div class="sprites">
+          <ul class="row-sprites">
+            <li class="twitter"><a target="_blank" href="https://twitter.com/Vasia02770786"></a></li>
+            <li class="facebook"><a target="_blank" href="https://www.facebook.com/yurkovetsvasia"></a></li>
+            <li class="g-plus"><a target="_blank" href="https://plus.google.com/u/0/114806018122095957182"></a></li>
+            <li class="linked-in"><a target="_blank" href="https://www.linkedin.com/in/vasia-yurkovets-70b421153/"></a></li>
+          </ul>
+          <p>
+            Journey © 2017 | Privacy Policy | Website designed by Vasia Yurkovets
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
