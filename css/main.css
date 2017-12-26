@@ -142,7 +142,6 @@ header .dropdown-content :hover {
   display: flex;
   flex-direction: column;
   width: 400px;
-  height: 100%;
   border-right: 1px solid #d3d3d3;
 }
 
@@ -152,6 +151,8 @@ header .dropdown-content :hover {
 
 .block form {
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .block form select {
@@ -166,6 +167,7 @@ header .dropdown-content :hover {
 .block form label {
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 .rozrah {
   width: 100%;
@@ -177,15 +179,23 @@ header .dropdown-content :hover {
 .rozrah h2, .rozrah p {
   padding: 6px;
   width: 100%;
+  font-family: Arial;
 }
 
+.rozrah h2:first-child {
+  font-weight: bold;
+  margin-top: 20px;
+}
 .rozrah img {
   margin: 0 auto;
+  max-width: 500px;
+  max-height: 400px;
+  padding-bottom: 30px
 }
 
 .chorn {
   width: 100%;
-  padding: 40px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -196,7 +206,7 @@ header .dropdown-content :hover {
 }
 
 .clear {
-  padding: 40px;
+  padding: 30px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -204,7 +214,7 @@ header .dropdown-content :hover {
 }
 .label {
   width: 100%;
-   
+
 }
 
 button {
@@ -216,9 +226,8 @@ button {
 
 .wrapper footer {
   width: auto;
-  height: 100px;
+  height: 90px;
   background-color: #ffffff;
-  font-size: 18px;
 }
 
 .contacts {
@@ -228,8 +237,6 @@ button {
   flex-direction: row;
   background-color: #30455b;
   padding: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .contacts h2, .contacts h3 {
@@ -244,7 +251,6 @@ button {
 
 .contacts p, .sprites {
   font-family: Arial, "Arial (Hebrew)", "David (Hebrew)";
-  font-size: 12px;
   padding-bottom: 6px;
   color: #ffffff;
 }

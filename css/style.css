@@ -154,17 +154,15 @@ header .dropdown-content :hover {
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .go-to {
-  width: 200px;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 4px;
   text-align: center;
   background-color: #30455b;
-  display: inline-block;
 }
 
 .go-to:hover {
@@ -185,7 +183,7 @@ header .dropdown-content :hover {
 
 .wrapper footer {
   width: auto;
-  height: 100px;
+  height: 90px;
   background-color: #ffffff;
 }
 
@@ -196,8 +194,6 @@ header .dropdown-content :hover {
   flex-direction: row;
   background-color: #30455b;
   padding: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .contacts h2, .contacts h3 {
@@ -212,7 +208,6 @@ header .dropdown-content :hover {
 
 .contacts p, .sprites {
   font-family: Arial, "Arial (Hebrew)", "David (Hebrew)";
-  font-size: 12px;
   padding-bottom: 6px;
   color: #ffffff;
 }
